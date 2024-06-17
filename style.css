@@ -1,0 +1,175 @@
+* {
+  padding: 0rem;
+  margin: 0rem;
+  outline: none;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: DM Sans;
+  font-size: 18px;
+  font-weight: 400;
+  background: hsl(27, 66%, 92%);
+}
+
+p {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+h3 {
+  font-weight: 700;
+}
+
+.balance {
+  width: 16rem;
+  height: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  color: rgb(240,240,240);
+  background: hsl(10, 79%, 65%);
+  border-radius: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.balance ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0rem;
+}
+
+.balance ul li {
+  list-style: none;
+}
+
+.balance ul li h1 {
+  font-size: 1.6rem;
+}
+
+.balance ul li img {
+  width: 3.5rem;
+}
+
+.chart {
+  width: 16rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background: hsl(33, 100%, 98%);
+  border-radius: 0.6rem;
+}
+
+.chart > h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+#line {
+  width: 100%;
+  height: 0.1rem;
+  background: hsl(27, 66%, 92%);
+  margin: 1rem 0rem;
+}
+
+#bars-wrap {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  border-radius: 0.6rem;
+  margin: 1rem 0rem;
+}
+
+#bars-wrap li {
+  width: 12%;
+  list-style: none;
+  background: hsl(10, 79%, 65%);
+  border-radius: 0.3rem;
+  transition: 309ms;
+}
+
+#bars-wrap li:hover {
+  background: hsl(10, 79%, 65%, 0.8);
+}
+
+#bars-day {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#bars-day li {
+  width: 12%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(140,140,140);
+  list-style: none;
+}
+
+#total {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.5rem 0rem;
+}
+
+#total li {
+  list-style: none;
+}
+
+#total li:nth-of-type(2) p:first-of-type {
+  color: hsl(25, 47%, 15%);
+  text-align: right;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+#total p {
+  color: rgb(140,140,140);
+}
+
+#total h2 {
+  color: hsl(25, 47%, 15%);
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+footer {
+  width: 100%;
+}
+
+.attribution {
+ width: 100%;
+ position: fixed;
+ bottom: 2%;
+ font-size: 11px; 
+ text-align: center; 
+}
+
+.attribution a {
+ color: hsl(228, 45%, 44%); 
+}
+
+
+
+@media(min-width: 726px) {
+  .balance,
+  .chart {
+    width: 22rem;
+  }
+}
